@@ -1,0 +1,140 @@
+#Grocery Store Calculator
+Fruits=input("Enter name of the fruit")
+Vegetables=input("Enter name of the vegetable")
+Sweets=input("Enter name of the sweets")
+Dry_Fruits=input("Enter name of the dry fruit")
+Pulses=input("Enter name of the pulses")
+Rice=input("Enter name of the rice")
+Spices=input("Enter name of the spices")
+
+if Fruits == "Apple":
+  print("Enter the amount of apples (in kg)")
+  Apple=float(input())
+elif Fruits == "Mango":
+  print("Enter the amount of mango (in kg)")
+  Mango=float(input())
+elif Fruits == "Banana":
+  print("Enter the amount of banana (in kg)")
+  Banana=float(input())
+elif Fruits == "Guava":
+  print("Enter the amount of guava (in kg)")
+  Guava=float(input())
+elif Fruits == "Melon":
+  print("Enter the amount of melon (in kg)")
+  Melon=float(input())
+elif Fruits == "Kiwi":
+  print("Enter the amount of kiwi (in kg)") 
+  Kiwi=float(input())
+  Cost_Of_Fruits = Apple *100 + Mango*200 + Banana*60 + Guava*80 + Melon*120 + Kiwi*250
+else :
+  print("Not Available")
+
+if Vegetables == "Potato" :
+  print("Enter the amount of potato (in kg)")
+  Potato=float(input())
+elif Vegetables == "Tomato":
+  print("Enter the amount of tomato (in kg)")
+  Tomato=float(input())
+elif Vegetables == "Onion":
+  print("Enter the amount of onion (in kg)") 
+  Onion=float(input())
+elif Vegetables == "Garlic":
+  print("Enter the amount of garlic (in kg)")
+  Garlic=float(input())
+elif Vegetables == "Cabbage":
+  print("Enter the amount of cabbage (in kg)")
+  Cabbage=float(input())
+elif Vegetables == "Carrot":
+  print("Enter the amount of carrot (in kg)")
+  Carrot=float(input())
+  Cost_Of_Vegetables = Potato*100+Tomato*200+Onion*60+Garlic*80+Cabbage*120+Carrot*150
+else :
+  print("Not Available")
+
+
+if Sweets == "Gulab Jamun":
+  print("Enter the amount of Gulab Jamun (in kg)")
+  Gulab_Jamun=float(input())
+elif Sweets == "Rasmalai":
+  print("Enter the amount of Rasmalai (in kg)")
+  Rasmalai=float(input())
+elif Sweets == "Kaju Katli":
+  print("Enter the amount of Kaju Katli (in kg)")
+  Kaju_Katli=float(input())
+  Cost_Of_Sweets = Gulab_Jamun*100+Rasmalai*200+Kaju_Katli*60
+else :
+  print("Not Available")
+
+
+if Dry_Fruits == "Almonds":
+  print("Enter the amount of Almonds (in kg)")
+  Almonds=float(input())
+elif Dry_Fruits == "Cashew":
+  print("Enter the amount of Cashew (in kg)")
+  Cashew=float(input())
+elif Dry_Fruits == "Walnut":
+  print("Enter the amount of Walnut (in kg)")
+  Walnut=float(input())
+  Cost_Of_Dry_Fruits = Almonds*100+Cashew*200+Walnut*60
+
+else :
+  print("Not Available")
+
+
+if Pulses == "Arhar":
+  print("Enter the amount of Arhar (in kg)")
+  Arhar=float(input())
+elif Pulses == "Moong":
+  print("Enter the amount of Moong (in kg)")
+  Moong=float(input())
+elif Pulses == "Ragi":
+  print("Enter the amount of Ragi (in kg)")
+  Ragi=float(input())
+  Cost_Of_Pulses = Arhar*100+Moong*200+Ragi*60
+
+else :
+  print("Not Available")
+
+
+if Rice == "Basmati":
+  print("Enter the amount of Basmati (in kg)")
+  Basmati=float(input())
+elif Rice == "Brown":
+  print("Enter the amount of Brown (in kg)")
+  Brown=float(input())
+elif Rice == "Jasmine":
+  print("Enter the amount of Jasmine (in kg)")
+  Jasmine=float(input())
+  Cost_Of_Rice = Basmati*100+Brown*200+Jasmine*60
+  
+else :
+  print("Not Available")
+
+
+if Spices == "Cumin":
+  print("Enter the amount of cumin (in kg)")
+  Cumin=float(input())
+elif Spices == "Turmeric":
+  print("Enter the amount of turmeric (in kg)")
+  Turmeric=float(input())
+elif Spices == "Pepper":
+  print("Enter the amount of pepper (in kg)")
+  Pepper=float(input())
+elif Spices == "Garam Masala":
+  print("Enter the amount of garam masala (in kg)")
+  Garam_Masala=float(input())
+elif Spices == "Mustard":
+  print("Enter the amount of mustard (in kg)")
+  Mustard=float(input())
+  Cost_Of_Spices = Cumin*100+Turmeric*200+Pepper*60+Garam_Masala*80+Mustard*120
+else :
+  print("Not Available")
+
+Total_Cost = Cost_Of_Fruits + Cost_Of_Vegetables + Cost_Of_Sweets + Cost_Of_Dry_Fruits + Cost_Of_Pulses + Cost_Of_Rice + Cost_Of_Spices
+if Total_Cost > 1000:
+  Discount=(5/100)*Total_Cost
+elif Total_Cost > 5000:
+  Discount=(10/100)*Total_Cost
+else:
+  print("No Discount")
+Final_Cost=Total_Cost-Discount
